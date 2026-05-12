@@ -9,8 +9,8 @@ import hello.core.member.MemberService;
 import hello.core.member.MemberServiceImpl;
 
 class MemberServiceTest {
-	
-	MemberService memberService = new MemberServiceImpl();
+	AppConfig appConfig = new AppConfig();
+	MemberService memberService = appConfig.memberService();
 
 	@Test
 	void test() {
